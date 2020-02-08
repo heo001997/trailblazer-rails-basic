@@ -57,7 +57,8 @@ gem 'cells-haml'
 gem "haml", github: "haml/haml", ref: "7c7c169"
 
 
-
+# Rspec for tests
+gem 'rspec-rails', '~> 3.0'
 
 
 # New Added 2/9/2020 >>> End
