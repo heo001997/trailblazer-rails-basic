@@ -42,13 +42,23 @@ gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 
-# Include bootstrap files:
-gem 'bootstrap-sass', '~> 3.3.5'
+## Include bootstrap files:
+#gem 'bootstrap-sass', '~> 3.3.5'
+gem 'sassc'
 # Simple form, form helpers with support for bootstrap styling.
 gem 'simple_form'
 
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
+
+
+# Haml support for cells, and dependent pre-released haml
+gem 'cells-haml'
+gem "haml", github: "haml/haml", ref: "7c7c169"
+
+
+
+
 
 # New Added 2/9/2020 >>> End
 
@@ -62,10 +72,6 @@ gem 'puma', '~> 4.1'
 gem 'sass-rails', '>= 6'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
 gem 'webpacker', '~> 4.0'
-# Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
-gem 'turbolinks', '~> 5'
-# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 2.7'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
